@@ -1,0 +1,12 @@
+'''reading the input from keyboard'''
+appointments = []
+print("Enter details for a new appointment:")
+patient_name = input("Enter patient's name: ")
+doctor_name = input("Enter doctor's name: ")
+time = input("Enter appointment time : ")
+
+appointments.append({"patient_name": patient_name, "doctor_name": doctor_name, "time": time})
+
+print("Appointments:")
+for appointment in appointments:
+    print(f"Patient: {appointment['patient_name']} - Doctor: {appointment['doctor_name']} - Time: {appointment['time']}")
